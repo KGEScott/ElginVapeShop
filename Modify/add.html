@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Product</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="preview-image.js"></script>
+</head>
+<body>
+	<h1>Add Product</h1>
+	<form class="form" action="add-product.php" method="post" enctype="multipart/form-data">
+		<div class="form-group upload">
+			<label for="image-upload">Upload Image:</label>
+			<input type="file" id="image-upload" name="image-upload" accept="image/*" onchange="previewImage(event)">
+			<img id="image-preview" src="#" alt="Image Preview">
+		</div>
+        <div class="form-group">
+            <label for="Category">Category:</label>
+            <select id="Category" name="Category">
+                <option value="1">Vape Juice</option>
+                <option value="2">Vape Mods</option>
+                <option value="3">Disposable Vape</option>
+                <option value="4">Cigars</option>
+                <option value="5">Hookah</option>
+                <option value="6">Tobacco</option>
+                <option value="7">Hookah Charcoal</option>
+                <option value="8">Rolling Paper</option>
+                <option value="9">Accessories</option>
+            </select>
+        </div>
+        </div>
+		<div class="form-group">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+		</div>
+		<div class="form-group">
+			<label for="description">Description:</label>
+			<textarea id="description" name="description" required></textarea>
+		</div>
+		<div class="form-group">
+			<label for="price">Price:</label>
+			<input type="text" id="price" name="price" required>
+		</div>
+		<div class="buttons">
+			<button type="submit">Submit</button>
+			<button type="button" onclick="window.location.href='index.html'">Cancel</button>
+		</div>
+	</form>
+
+	<div id="error-popup" class="popup">
+		<div class="popup-content">
+			<span class="popup-close">&times;</span>
+			<p id="error-message"></p>
+		</div>
+	</div>
+
+	<script>
+		function showErrorPopup(error_message) {
+			document.getElementById("error-message").innerHTML = error_message;
+			document.getElementById("error-popup").style.display = "block";
+		}
+
+		var closeButtons = document.getElementsByClassName("popup-close");
+		for (var i = 0; i < closeButtons.length; i++) {
+			closeButtons[i].onclick = function() {
+				document.getElementById("error-popup").style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
