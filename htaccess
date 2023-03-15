@@ -1,0 +1,10 @@
+ErrorDocument 400 http://www.ElginVapeShop.com/Error/400.html
+ErrorDocument 401 http://www.ElginVapeShop.com/Error/401.html
+ErrorDocument 403 http://www.ElginVapeShop.com/Error/403.html
+ErrorDocument 404 http://www.ElginVapeShop.com/Error/404.html
+ErrorDocument 503 http://www.ElginVapeShop.com/Error/503.html
+DirectoryIndex index.php index.html index.htm index2.html index3.html
+# Disable caching
+Header set Cache-Control "no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires 0

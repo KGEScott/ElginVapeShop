@@ -1,0 +1,388 @@
+body {
+	background-color: #191919;
+	color: #FFFFFF;
+	font-family: Arial, sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+nav {
+  background-color: transparent;
+  border-bottom: 5px solid rgb(255, 0, 0);
+  padding: 0;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+nav .logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+nav .logo img {
+  height: 300px;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: rgb(105, 105, 105);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: rgb(0, 235, 255);
+  background-color: transparent;
+}
+
+
+
+header {
+  background-image: url('Images/banner background3.png');
+  padding: 100px;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: transparent;
+}
+
+header h1 {
+	color: rgb(105, 105, 105);
+	font-size: 50px;
+	margin: 0;
+	text-shadow: 2px 2px rgb(255, 0, 0);
+}
+
+header p {
+	color: rgb(105, 105, 105);
+	font-size: 24px;
+	margin: 20px 0;
+	text-shadow: 2px 2px rgb(80, 0, 0);
+}
+
+header button {
+	background-color: rgb(80, 0, 0);
+	border: none;
+	color: rgb(105, 105, 105);
+	cursor: pointer;
+	font-size: 18px;
+	padding: 15px 25px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+header button:hover {
+	background-color: #212121;
+}
+
+.hero-image {
+  position: relative;
+  background-image: url('Images/ElginVapeShop.jpg');
+  padding: 100px;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  border: 5px solid rgb(255, 0, 0);
+}
+
+ .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 235, 255);
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 15px rgb(255, 0, 0);
+  text-decoration: 20px;
+  width: 100%;
+}
+
+section {
+  padding: 100px;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section h2 {
+	color: rgb(0, 235, 255);
+	font-size: 36px;
+	margin-top: 0;
+}
+
+.product-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.product {
+	background-color: transparent;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+	width: 300px;
+    border-top: 5px solid rgb(255, 0, 0);
+}
+
+.product img {
+	max-width: 100%;
+}
+
+.product h3 {
+	color: rgb(255, 0, 0);
+	font-size: 24px;
+	margin-top: 0;
+}
+
+.product p {
+	color: rgb(105, 105, 105);
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+.product button {
+	background-color: rgb(105, 105, 105);
+	border: none;
+	color: #191919;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.product button:hover {
+	background-color: rgb(0, 235, 255);
+}
+
+.about-us {
+    border-top: 5px solid rgb(255, 0, 0);
+}
+
+.about-us-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-us-image {
+	padding: 50px;
+}
+
+.about-us-image img {
+	max-width: 100%;
+}
+
+.about-us-text {
+	padding: 50px;
+	text-align: center;
+}
+
+.about-us-text p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 0 0 20px;
+	color: rgb(105, 105, 105);
+}
+
+.social-media-icons {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.social-media-icons li {
+	margin: 0 10px;
+}
+
+.social-media-icons a {
+	display: inline-block;
+	background-color: rgb(255, 0, 0);
+	border-radius: 50%;
+	color: rgb(0, 235, 255);
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 24px;
+	transition: all 0.3s ease;
+}
+
+.social-media-icons a:hover {
+	background-color: #212121;
+	color: rgb(80, 0, 0);
+}
+
+footer {
+	background-color: #191919;
+	color: rgb(105, 105, 105);
+    padding: 100px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+	border-top: 5px solid rgb(255, 0, 0);
+}
+
+.footer-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.footer-column {
+	flex: 1;
+	margin: 0 20px;
+	max-width: 300px;
+	text-align: left;
+}
+
+.footer-column h3 {
+	color: rgb(0, 235, 255);
+	font-size: 24px;
+	margin-top: 0;
+}
+
+.footer-column ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-column li {
+	color: rgb(105, 105, 105);
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+.footer p {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+footer a {
+  color: rgb(0, 235, 255);
+}
+
+footer a:visited {
+  color: rgb(255, 0, 0);
+}
+
+        /* Set max-width and max-height of images */
+        .item img {
+            max-width: 100%;
+            max-height: 80%;
+        }
+
+        /* Use CSS Grid to display items in a grid format */
+        .item-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            margin: 20px 0;
+        }
+.item {
+    position: relative; /* Set the parent container to relative positioning */
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border-top: 5px solid rgb(255, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px; /* Set a fixed height for the item container */
+}
+
+.item h3 {
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.item p {
+    color: rgb(105, 105, 105);
+    font-size: 18px;
+    margin: 0; /* Remove margin from the text container */
+    flex-grow: 1; /* Set the flex-grow property for the text container to 1 */
+}
+
+.item button {
+    position: absolute; /* Set the button to absolute positioning */
+    bottom: 10px; /* Set the bottom offset for the button */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    background-color: rgb(105, 105, 105);
+    border: none;
+    color: #191919;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.item button:hover {
+    background-color: rgb(0, 235, 255);
+}
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="items.js"></script>
+</head>
+<body>
+	<header id = "header">
+		<nav>
+			<div class="logo">
+				<img src="Images/logo3.png" alt="My Vape Shop Logo">
+			</div>
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/inventory.html?category=1">Vape Juice</a></li>
+                <li><a href="/inventory.html?category=2">Vape Mods</a></li>
+				<li><a href="/inventory.html?category=3">Disposable Vape</a></li>
+                <li><a href="/inventory.html?category=4">Cigars</a></li>
+                <li><a href="/inventory.html?category=5">Hookah</a></li>
+                <li><a href="/inventory.html?category=6">Tobacco</a></li>
+                <li><a href="/inventory.html?category=7">Charcoal</a></li>
+                <li><a href="/inventory.html?category=8">Rolling Papers</a></li>
+                <li><a href="/inventory.html?category=9">Accessories</a></li>
+                <li><a href="/inventory.html?category=10">All Products</a></li>
+				<li><a href="#footer">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main>
+        <section class="item-list">
+            <h2>Items in Category: <span id="category-name"></span></h2>
+            <div class="item-container"></div>
+        </section>
+    </main>
+    <script>
+        // Call the getItems function when the page loads
+        window.onload = function() {
+            // Get the category from the URL parameters
+            let searchParams = new URLSearchParams(window.location.search);
+            let category = searchParams.get("category");
+            // Set the category name in the heading
+            let categoryName = getCategoryName(category);
+            document.getElementById("category-name").textContent = categoryName;
+            // Call the getItems function with the category parameter
+            getItems(category);
+        };
+    </script>
+
+    	<footer id = "footer">
+		<div class="footer-container">
+			<div class="footer-column">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/index.html#featured-products">Featured</a></li>
+                    <li><a href="/inventory.html?category=10">Inventory</a></li>
+					<li><a href="/index.html#about-us">About Us</a></li>
+					<li><a href="/ContactInfo.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="footer-column">
+				<h3>Contact Us</h3>
+				<ul>
+                    <li>Store Hours: Mon-Sun 9AM - 9PM</li>
+					<li>1232 Rose St Suite D</li>
+					<li>Elgin, SC 29045</li>
+					<li>Phone: (555) 555-5555</li>
+					<li>Email: <a href="mailto:jzvapor@outlook.com">jzvapor@outlook.com</a></li>
+				</ul>
+			</div>
+			<div class="footer-column">
+				<h3>Follow Us</h3>
+				<ul class="social-media-icons">
+					<li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<p>&copy; 2023 Elgin Tobacco and Vape</p>
+	</footer>
+</body>
+</html>
