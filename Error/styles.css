@@ -1,0 +1,15 @@
+body {
+  background-color: #313131;
+}
+
+.error-container {
+  text-align: center;
+  color: #ffffff;
+  font-size: 36px;
+  padding: 100px 0;
+}
+
+.error-title {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
