@@ -1,1 +1,1 @@
-product Images go here
+product Images go here when adding product from site.
